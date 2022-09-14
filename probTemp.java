@@ -87,11 +87,11 @@ public class GetProbability
 
       int totalLength = 0;
 
-      int countPathsUntil = 5000;
+      int countPathsUntil = 1000;
 
       int numberOfPaths = 0;
 
-      for (int iii = 0; iii < 5000; iii++) {
+      for (int iii = 0; iii < 1000; iii++) {
         
         System.out.printf("Path %d - ", iii);
         
