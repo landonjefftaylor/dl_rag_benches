@@ -87,9 +87,11 @@ public class GetProbability
 
       int totalLength = 0;
 
-      int countPathsUntil = 5;
+      int countPathsUntil = 1000;
 
-      for (int iii = 0; iii < 5; iii++) {
+      int numberOfPaths = 0;
+
+      for (int iii = 0; iii < 1000; iii++) {
         
         System.out.printf("Path %d - ", iii);
         
@@ -132,11 +134,14 @@ public class GetProbability
           pathLength++;
           
         }
-        System.out.printf("Length %d\n", pathLength);
+        System.out.printf("Length %d\t", pathLength);
+        System.out.printf("Prob %e\n", pathProbability);
+        numberOfPaths += 1;
         totalProbability += pathProbability;
         totalLength += pathLength;
       }
 
+      System.out.printf("Total Path Count: %d\n",numberOfPaths);
       System.out.printf("Total Path Length Sum: %d\n",totalLength);
       System.out.printf("Average Path Length: %f\n", (float) totalLength / countPathsUntil);
       System.out.printf("Total Probability: %e\n",totalProbability);
