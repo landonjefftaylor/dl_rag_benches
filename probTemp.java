@@ -134,7 +134,8 @@ public class GetProbability
           pathLength++;
           
         }
-        System.out.printf("Length %d\n", pathLength);
+        System.out.printf("Length %d\t", pathLength);
+        System.out.printf("Prob %e\t", pathProbability);
         numberOfPaths += 1;
         totalProbability += pathProbability;
         totalLength += pathLength;
