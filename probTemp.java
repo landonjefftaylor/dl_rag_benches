@@ -51,9 +51,9 @@ public class GetProbability
 
       // parse the prism model
       // For now, model.sm is the model file.
-      ModulesFile modulesFile = prism.parseModelFile(new File("models/8react.sm"));
+      ModulesFile modulesFile = prism.parseModelFile(new File("_FILEPATH_"));
       System.out.println("\n\n\n********************************\n");
-      System.out.println("WORKING ON models/8react.sm");
+      System.out.println("WORKING ON _FILEPATH_");
       System.out.println("\n********************************");
       // ModulesFile modulesFile = prism.parseModelFile(new File("../model.sm"));
 
@@ -73,7 +73,7 @@ public class GetProbability
       // read the CSL property for making sure we end up in a target state
       // FileReader fr_p = new FileReader("DonovanYeastPolarization/yeastPolarization.sm");
       // BufferedReader br_p = new BufferedReader(fr_p);
-      String x_p = "gbg = 50";
+      String x_p = "_PROPERTY_";
       // x_p = br_p.readLine();
       Expression target = prism.parsePropertiesString(x_p).getProperty(0);
 
